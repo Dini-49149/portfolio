@@ -1,0 +1,437 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dinesh Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="{% static 'assets\svg\portfolio-icon.svg' %}">
+    <meta name="description" content="Portfolio Template for Developer" />
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="{% static 'assets/png/dinesh.png' %}"
+              alt="Dinesh Vennapoosa Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Dinesh Vennapoosa</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="{% url 'Home Section' %}" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#publications" class="header__link">
+                Publications
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="{% static 'assets/svg/ham-menu.svg' %}"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="{% static 'assets/svg/ham-menu-close.svg' %}"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="{% url 'Home Section' %}"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, My name is Dinesh</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            Empowering Data-Driven Innovations with Cutting-Edge Technology and Research. A dedicated Data Scientist with a proven track record of transforming complex data into actionable insights and robust solutions.
+            Explore my projects, publications, and the journey I've embarked on to leverage data science for real-world solutions.
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="{% static 'assets/Resume_Dinesh.pdf' %}" class="btn btn--bg">My Resume</a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            Exploring the Frontiers of Data with Passion and Precision
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Welcome to my world, where every <strong>dataset</strong> tells a story and every <strong>algorithm</strong> offers a solution. 
+                With a Master’s from <strong>Indiana University Purdue Universitydataset</strong> and a Bachelor’s in <strong>Mechanical</strong> Engineering from <strong>NIT</strong>, 
+                my path has taken me from the fundamentals of engineering to the complexities of <strong>dataset</strong>data science.
+              </p>
+
+              <p class="about__content-details-para">
+                In every dataset, I see a puzzle waiting to be solved, and I dive deep into the numbers to find the story they're telling.
+                But it’s not all about algorithms and code. 
+                It’s about the <strong>people</strong>, the <strong>process</strong>, and the <strong>impact</strong>. 
+                From <strong>India</strong> to <strong>Indiana</strong>, my journey has been about more than just data; 
+                it's been about making a <strong>difference</strong> with data.
+              </p>
+              <p class="about__content-details-para">
+              Ready to join me on this adventure? Let’s connect and craft the future of <strong>data science</strong> together.
+            </p>
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">R</div>
+              <div class="skills__skill">SQL</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">Statistical Analysis</div>
+              <div class="skills__skill">Data Visualization</div>
+              <div class="skills__skill">Machine Learning</div>
+              <div class="skills__skill">Deep Learning</div>
+              <div class="skills__skill">Computer Vision</div>
+              <div class="skills__skill">Natural Language Processing</div>
+              <div class="skills__skill">LLMs</div>
+              <div class="skills__skill">Data Wrangling and Cleaning</div>
+              <div class="skills__skill">Big Data Technologies</div>
+              <div class="skills__skill">Model Deployment</div>
+              <div class="skills__skill">CI/CD</div>
+              <div class="skills__skill">Docker</div>
+              <div class="skills__skill">Django</div>
+              <div class="skills__skill">API Development</div>
+              <div class="skills__skill">AWS</div>
+              <div class="skills__skill">Storytelling</div>
+              <div class="skills__skill">Problem-solving</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            Crafting Data Narratives That Drive Technological Progress and Inspire Global Change.
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont" style="display: flex; justify-content: center; align-items: center;">
+              <img
+                src="{% static 'assets\png\stego_img.png' %}"
+                style="width: 70%; height: auto;"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Image Steganography using Deep Learning</h3>
+              <p class="projects__row-content-desc">
+                In an era where digital security is paramount, this project introduces an innovative deep learning model to elevate data transmission security. 
+                The encoder-decoder architecture employed outwits traditional steganography, optimizing secrecy with impressive SSIM scores. Peek behind the pixels and 
+                see how data protection is being redefined.
+              </p>
+              <a href="{% url 'Project Detail' project_id='stego' %}" 
+              class="btn btn--med btn--theme dynamicBgClr" 
+              target="_blank">Case Study
+            </a>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont" style="display: flex; justify-content: center; align-items: center;">
+              <img
+                src="{% static 'assets/png/lie_detec_img.png' %}"
+                style="width: 70%; height: auto;"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Automated Lie Detection with Deep Learning</h3>
+              <p class="projects__row-content-desc">
+                Venture into the realm of truth with a cutting-edge approach to lie detection, integrating CNN and RNN models for multimodal data analysis. 
+                This research does not just detect falsehoods but opens a dialogue on the ethics and future of truth in digital communication. Uncover the truths 
+                hidden within the data..
+              </p>
+              <a href="{% url 'Project Detail' project_id='lie_detection' %}" 
+              class="btn btn--med btn--theme dynamicBgClr" 
+              target="_blank"
+              >Case Study</a>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont" style="display: flex; justify-content: center; align-items: center;">
+              <img
+                src="{% static 'assets/png/stock_price.png' %}"
+                style="width: 70%; height: auto;"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Sentiment Analysis of Stock Market Trends with ML Models using PySpark</h3>
+              <p class="projects__row-content-desc">
+                Embark on a journey through the completed project that mapped the intricate interplay between 
+                social sentiment and the stock market's dynamic movements. This project harnessed machine learning and 
+                large-scale data analytics to unravel the predictive power of public emotion on financial trends. 
+                Experience the project's exploration into the nuanced influences of sentiment on the market's pulse.
+              </p>
+              <a href="{% url 'Project Detail' project_id='stock_predict' %}" 
+              class="btn btn--med btn--theme dynamicBgClr" 
+              target="_blank"
+              >Case Study</a>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont" style="display: flex; justify-content: center; align-items: center;">
+              <img
+                src="{% static 'assets/png/covid_19_air_pollution.png' %}"
+                style="width: 70%; height: auto;"
+                alt="covid_19_air_pollution"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">COVID-19 Impact on Air Quality and Food Security</h3>
+              <p class="projects__row-content-desc">
+                Selected as a top project, this analysis provides a panoramic view of COVID-19's multifaceted impact. 
+                From air pollution to food insecurity, learn how data science can illuminate the path to resilience and 
+                recovery in the face of a global crisis. Explore predictive insights for a world in recovery.
+              </p>
+              <a href="{% url 'Project Detail' project_id='covid' %}" 
+              class="btn btn--med btn--theme dynamicBgClr" 
+              target="_blank"
+              >Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="publications" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Publications</span>
+          <span class="heading-sec__sub">
+            Insights Published, Knowledge Shared
+          </span>
+        </h2>
+        <div style = "display: flex; align-items: center; justify-content: center; flex-direction: column; width:100%;">
+            <div class="projects__row-content" style="padding: 25px;border: 1px solid #4b74cb; border-radius: 50px; width: 60%; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+                <h3 class="projects__row-content-title">Diagnosing Cancer with AI and Machine Learning Models</h3>
+                <p class="projects__row-content-desc" style="padding: 10px;">
+                  This publication delves into the application of sophisticated AI algorithms and machine learning models to diagnose cancer, showcasing a significant leap towards precision medicine. Explore how technology's interplay with healthcare is not just reshaping diagnoses but also offering hope for early detection and treatment strategies.
+                </p>
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S2214785321049403" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Know more</a>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Let's Connect and Collaborate on Future Innovations
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section> -->
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Let's Connect and Collaborate on Future Innovations
+          </span>
+        </h2>
+        <div class="contact__links-container" style="text-align:center;">
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="mailto:dinesh.vennapoosa@gmail.com">
+              <img
+                style="width: 50px; height: auto; margin-right: 4rem; padding-bottom: 10px;"
+                src="{% static 'assets/png/gmail_ico.png' %}"
+                alt="icon"
+              />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dinesh-reddy-baa06813a/">
+              <img
+                style="width: 65px; height: auto; margin-right: 4rem;"
+                src="{% static 'assets/png/linkedin-ico.png' %}"
+                alt="icon"
+              />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/Dini-49149/">
+              <img
+                style="width: 60px; height: auto;"
+                src="{% static 'assets/png/github-ico.png' %}"
+                alt="icon"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dinesh-reddy-baa06813a/">
+                <img
+                  class="main-footer__icon"
+                  src="{% static 'assets/png/linkedin-ico.png' %}"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/Dini-49149/">
+                <img
+                  class="main-footer__icon"
+                  src="{% static 'assets/png/github-ico.png' %}"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/dineshreddy56235/">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="{% static 'assets/png/insta-ico.png' %}"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Dinesh Vennapoosa</h4>
+            <p class="main-footer__short-desc">
+              Connect with me on social media for insights, updates, and the latest in data science. Let's drive innovation together.
+            </p>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
