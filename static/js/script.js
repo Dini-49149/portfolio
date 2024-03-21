@@ -34,6 +34,10 @@ for (let i = 0; i < headerSmallMenuLinks.length; i++) {
 const headerLogoConatiner = document.querySelector('.header__logo-container');
 
 headerLogoConatiner.addEventListener('click', () => {
+<<<<<<< HEAD
   
 });
 
+=======
+})
+>>>>>>> 05f02a62ce90230e4f67bbc62045bbbb5d692eaa
